@@ -20,7 +20,7 @@ module.exports = {
         text: '我的文章',
         items: [
           {text: 'java', link: '/note/java/'},  // 注意link的设置，这样写的话就是从docs文件夹中找到note文件夹再找到vue文件夹
-          {text: 'react', link: '/note/react/'}, // 注意link的设置，如此写就是从docs文件夹中找到note文件夹再找到react文件夹
+          {text: 'blog', link: '/note/blog/'}, // 注意link的设置，如此写就是从docs文件夹中找到note文件夹再找到react文件夹
         ]
       },  // vue 的js配置文件末尾的 ',' 没有限制，可写可不写
     ],
@@ -28,21 +28,23 @@ module.exports = {
     sidebar: {
       // 将会从docs文件夹中找到note文件夹再找到vue文件夹，然后再在里面寻找对应的文件
       '/note/java/': [
-        ['', '介绍'],   // 注意必须要有readme.md文件，这样写，就会找到 docs/note/vue/README.md 文件
+        ['', 'java专栏介绍'],   // 注意必须要有readme.md文件，这样写，就会找到 docs/note/vue/README.md 文件
         // 单一侧边栏，没有下拉选项
-        ['ssm框架-流程.md', 'ssm的介绍']  // 必须以数组的形式进行设置，[link,text]，link为文件路径，text为侧边栏文本，这样写，就会从
+        ['ssm框架-流程.md', 'ssm框架-流程'],  // 必须以数组的形式进行设置，[link,text]，link为文件路径，text为侧边栏文本，这样写，就会从
         // docs/note/vue 文件夹中找到 test1.md 文件
+        // text 是你在左侧显示的名称，实际展示的文件是 ssm框架-流程.md
+        ['跨域-spring-boot后端配置.md', '跨域后端配置'],
       ],
 
       // 将会从docs文件夹中找到note文件夹再找到react文件夹中开始寻找对应的文件
-      '/note/react/': [
-        ['', '介绍'], // 寻找 docs/note/react/README.md 文件
+      '/note/blog/': [
+        ['', '博客专栏介绍'], // 寻找 docs/note/react/README.md 文件
         // 有下拉选项的侧边栏
         {
-          title: '基本教程',  // 下拉侧边栏显示的文本
+          title: '博客',  // 下拉侧边栏显示的文本
           children: [
-            ['/note/react/basic/react如何使用', 'react如何使用'],   // 找到 docs/note/react/basic/react如何使用.md 文件
-            ['/note/react/basic/咬紧666', '咬紧666']
+            ['/note/blog/basic/hexo-设置favicon', 'hexo如何设置favicon'],   // 找到 docs/note/react/basic/react如何使用.md 文件
+            ['/note/blog/basic/hexo部署css-js等404以及上传图片', 'hexo部署后404问题解决']
           ]
         },
       ],
@@ -50,7 +52,7 @@ module.exports = {
       // 首页的侧边栏
       '/': [
         ['', '首页'],   // docs/README.md
-        ['咬紧2070', '咬紧2070']  // docs/咬紧2070.md
+        ['岁月', '陪你度过余生']  // docs/咬紧2070.md
       ]
     },
     sidebarDepth: 0,  // 侧边栏显示等级，我一般设置0级
