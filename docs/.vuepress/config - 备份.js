@@ -19,7 +19,7 @@ module.exports = {
       {
         text: '我的文章',
         items: [
-          {text: 'java', link: '/note/java/'},  // 注意link的设置，这样写的话就是从docs文件夹中找到note文件夹再找到vue文件夹
+          {text: 'vue', link: '/note/vue/'},  // 注意link的设置，这样写的话就是从docs文件夹中找到note文件夹再找到vue文件夹
           {text: 'react', link: '/note/react/'}, // 注意link的设置，如此写就是从docs文件夹中找到note文件夹再找到react文件夹
         ]
       },  // vue 的js配置文件末尾的 ',' 没有限制，可写可不写
@@ -27,10 +27,10 @@ module.exports = {
     // 侧边栏设置
     sidebar: {
       // 将会从docs文件夹中找到note文件夹再找到vue文件夹，然后再在里面寻找对应的文件
-      '/note/java/': [
+      '/note/vue/': [
         ['', '介绍'],   // 注意必须要有readme.md文件，这样写，就会找到 docs/note/vue/README.md 文件
         // 单一侧边栏，没有下拉选项
-        ['ssm框架-流程.md', 'ssm的介绍']  // 必须以数组的形式进行设置，[link,text]，link为文件路径，text为侧边栏文本，这样写，就会从
+        ['test1.md', 'vue的介绍']  // 必须以数组的形式进行设置，[link,text]，link为文件路径，text为侧边栏文本，这样写，就会从
         // docs/note/vue 文件夹中找到 test1.md 文件
       ],
 
