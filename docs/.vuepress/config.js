@@ -1,7 +1,7 @@
 // .vuepress/config.js 配置文件
 module.exports = {
   title: "拉丁小毛的个人vuepress博客", // 博客标题
-  dest: "./dist", // 打包后存放的路径，以根目录开始
+  // dest: "./dist", // 打包后存放的路径，以根目录开始，我这里不需要设置，编辑完md文章后，只需要执行 ./build.sh 脚本即可
   head: [
     ['link', {rel: 'icon', href: '/favicon.ico'}],  // 设置网页的icon图标，将会从public文件夹中找到favicon.ico文件
     ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}]  // 设置移动端兼容
