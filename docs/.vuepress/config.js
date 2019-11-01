@@ -23,6 +23,13 @@ module.exports = {
           {text: 'blog', link: '/note/blog/'}, // 注意link的设置，如此写就是从docs文件夹中找到note文件夹再找到react文件夹
         ]
       },  // vue 的js配置文件末尾的 ',' 没有限制，可写可不写
+      // 美图欣赏
+      {
+      	text: '美图欣赏',
+      	items: [
+      		{text: 'photos', link: '/note/photos/'},
+      	]
+      },
     ],
     // 侧边栏设置
     sidebar: {
@@ -48,6 +55,18 @@ module.exports = {
             ['/note/blog/basic/vuepress博客上传图片', 'vuepress博客上传图片解决'],
           ]
         },
+      ],
+
+      // 新开一个专栏用来存放美图
+      '/note/photos/': [
+      	['', '美图专栏'],	// 当切换到 /note/photos/ 时默认展示该md
+      	// 这里采用有下拉选项的侧边栏
+      	{
+      		tilte: '美图',	// 下拉侧边栏显示的文本
+      		children: [
+      			['/note/photos/date/20191102美图', '20191102'],
+      		]
+      	}
       ],
 
       // 首页的侧边栏
