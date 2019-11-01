@@ -22,10 +22,10 @@ include:
 
 如图所示:
 
-![](/images/19103001.png)
+![](/blog-vuepress/19103001.png)
 
 ### 如何上传图片呢
 
-我们只需要在我们的`source`目录下，新建一个 `images` 目录，然后将所有的图片都保存在这里，之后在 `md` 文件中引用即可(例如: `/images/19103002.png`)
+我们只需要在我们的`source`目录下，新建一个 `images` 目录，然后将所有的图片都保存在这里，之后在 `md` 文件中引用即可(例如: `/blog-vuepress/19103002.png`)
 
-![](/images/19103002.png)
+![](/blog-vuepress/19103002.png)
