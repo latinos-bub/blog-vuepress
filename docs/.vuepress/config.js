@@ -44,7 +44,8 @@ module.exports = {
           title: '博客',  // 下拉侧边栏显示的文本
           children: [
             ['/note/blog/basic/hexo-设置favicon', 'hexo如何设置favicon'],   // 找到 docs/note/react/basic/react如何使用.md 文件
-            ['/note/blog/basic/hexo部署css-js等404以及上传图片', 'hexo部署后404问题解决']
+            ['/note/blog/basic/hexo部署css-js等404以及上传图片', 'hexo部署后404问题解决'],
+            ['/note/blog/basic/vuepress博客上传图片', 'vuepress博客上传图片解决'],
           ]
         },
       ],
