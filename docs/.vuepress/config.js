@@ -4,8 +4,9 @@ module.exports = {
   // dest: "./dist", // 打包后存放的路径，以根目录开始，我这里不需要设置，编辑完md文章后，只需要执行 ./build.sh 脚本即可
   head: [
     ['link', {rel: 'icon', href: '/favicon.ico'}],  // 设置网页的icon图标，将会从public文件夹中找到favicon.ico文件
-    ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}]  // 设置移动端兼容
-
+    ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}],  // 设置移动端兼容
+    ['link', {rel: 'manifest', href: '/manifest.json'}],	// manifest pwa配置
+    ['link', { rel: 'apple-touch-icon', href: '/logo.png' }], // 由于iphone11.3不支持manifest的图标，所以加上apple-touch-icon图标配置
   ],
   base: "/blog-vuepress/",  // 设置根路径，如果你是推送到username.github.io的仓库，则不需要设置，我这里是因为仓库名叫username.github.io/blog-vuepress
   themeConfig: {
@@ -87,6 +88,8 @@ module.exports = {
     lastUpdated: 'Last Updated', // string | boolean
     repo: 'https://github.com/latinos-bub/blog-vuepress',
     repoLabel: '查看源码',
-    smoothScroll: true
+    smoothScroll: true,
+
+    serviceWorker: true, // VuePress默认支持PWA配置的，需要在基本配置中开启serviceWorker
   }
 };
