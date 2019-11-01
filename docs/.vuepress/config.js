@@ -60,11 +60,11 @@ module.exports = {
 
     // logo: '/assets/images/logo.png',
     logo: '/logo.png',
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'External', link: 'https://google.com' },
-    ],
+    // nav: [
+    //   { text: 'Home', link: '/' },
+    //   { text: 'Guide', link: '/guide/' },
+    //   { text: 'External', link: 'https://google.com' },
+    // ],
     lastUpdated: 'Last Updated', // string | boolean
     repo: 'https://github.com/latinos-bub/blog-vuepress',
     repoLabel: '查看源码',
