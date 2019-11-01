@@ -10,8 +10,8 @@
 # cd docs/.vuepress/dist
 
 # git
-git init
+# git init
 git add .
 git commit -m "上传源码到dev分支"
-git remote add origin git@github.com:latinos-bub/blog-vuepress.git
+# git remote add origin git@github.com:latinos-bub/blog-vuepress.git
 git push -f origin dev
