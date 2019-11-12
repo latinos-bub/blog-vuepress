@@ -42,6 +42,7 @@ module.exports = {
         // docs/note/vue 文件夹中找到 test1.md 文件
         // text 是你在左侧显示的名称，实际展示的文件是 ssm框架-流程.md
         ['跨域-spring-boot后端配置.md', '跨域后端配置'],
+        ['Java中使用HSSFWorkbook生成excel.md', 'Java中使用HSSFWorkbook生成excel'],
       ],
 
       // 将会从docs文件夹中找到note文件夹再找到react文件夹中开始寻找对应的文件
