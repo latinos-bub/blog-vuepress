@@ -12,7 +12,7 @@ tags:
 categories:
 	- 编程
 ---
-![](/20191112/1.jpg)
+![注意所有的图片引用前缀都要加blog-vuepress](/blog-vuepress/20191112/1.jpg)
 
 # HSSFWorkbook 介绍
 ---
@@ -27,7 +27,7 @@ categories:
 
 这里提一下：HSSFWorkbook:是操作Excel2003以前（包括2003）的版本，扩展名是.xls；XSSFWorkbook:是操作Excel2007的版本，扩展名是.xlsx。对于不同版本的EXCEL文档要使用不同的工具类，如果使用错了，会提示如下错误信息：org.apache.poi.openxml4j.exceptions.InvalidOperationException，org.apache.poi.poifs.filesystem.OfficeXmlFileException
 
-![](/20191112/2.jpg)
+![](/blog-vuepress/20191112/2.jpg)
 
 # HSSFWorkbook 的使用
 ---
@@ -300,7 +300,7 @@ public class TestGenExcel {
 
 ------
 
-![](/20191112/3.jpg)
+![](/blog-vuepress/20191112/3.jpg)
 
 <div align="middle">《行香子·归去来兮》	
 	-- 北宋：辛弃疾
