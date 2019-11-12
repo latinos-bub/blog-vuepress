@@ -20,60 +20,63 @@ module.exports = {
       // {
       //   text: '我的文章',
       //   items: [
-      //     {text: 'java', link: '/note/java/'},  // 注意link的设置，这样写的话就是从docs文件夹中找到note文件夹再找到vue文件夹
-      //     {text: 'blog', link: '/note/blog/'}, // 注意link的设置，如此写就是从docs文件夹中找到note文件夹再找到react文件夹
+      //     {text: 'code', link: '/posts/code/'},  // 注意link的设置，这样写的话就是从docs文件夹中找到note文件夹再找到vue文件夹
+      //     {text: 'blog', link: '/posts/blog/'}, // 注意link的设置，如此写就是从docs文件夹中找到note文件夹再找到react文件夹
       //   ]
       // },  // vue 的js配置文件末尾的 ',' 没有限制，可写可不写
 
       // 修改为不要下拉选项
       {
-        text: '我的文章',
-        link: '/note/java/',  
-        link: '/note/blog/'
+        text: 'blog随想',  
+        link: '/posts/blog/'
+      },
+      {
+        text: '编程技术',
+        link: '/posts/code/'
       },
       // 美图欣赏
       {
       	text: '美图欣赏',
       	items: [
-      		{text: 'photos', link: '/note/photos/'},
+      		{text: 'photos', link: '/posts/photos/'},
       	]
       },
     ],
     // 侧边栏设置
     sidebar: {
       // 将会从docs文件夹中找到note文件夹再找到vue文件夹，然后再在里面寻找对应的文件
-      '/note/java/': [
-        ['', 'java专栏介绍'],   // 注意必须要有readme.md文件，这样写，就会找到 docs/note/vue/README.md 文件
+      '/posts/code/': [
+        ['', '专栏介绍'],   // 注意必须要有readme.md文件，这样写，就会找到 docs/note/vue/README.md 文件
         // 单一侧边栏，没有下拉选项
         ['ssm框架-流程.md', 'ssm框架-流程'],  // 必须以数组的形式进行设置，[link,text]，link为文件路径，text为侧边栏文本，这样写，就会从
-        // docs/note/vue 文件夹中找到 test1.md 文件
+        // docs/posts/vue 文件夹中找到 test1.md 文件
         // text 是你在左侧显示的名称，实际展示的文件是 ssm框架-流程.md
         ['跨域-spring-boot后端配置.md', '跨域后端配置'],
         ['Java中使用HSSFWorkbook生成excel.md', 'Java中使用HSSFWorkbook生成excel'],
       ],
 
       // 将会从docs文件夹中找到note文件夹再找到react文件夹中开始寻找对应的文件
-      '/note/blog/': [
-        ['', '博客专栏介绍'], // 寻找 docs/note/react/README.md 文件
+      '/posts/blog/': [
+        ['', '专栏介绍'], // 寻找 docs/note/react/README.md 文件
         // 有下拉选项的侧边栏
         {
           title: '博客',  // 下拉侧边栏显示的文本
           children: [
-            ['/note/blog/basic/hexo-设置favicon', 'hexo如何设置favicon'],   // 找到 docs/note/react/basic/react如何使用.md 文件
-            ['/note/blog/basic/hexo部署css-js等404以及上传图片', 'hexo部署后404问题解决'],
-            ['/note/blog/basic/vuepress博客上传图片', 'vuepress博客上传图片解决'],
+            ['/posts/blog/basic/hexo-设置favicon', 'hexo如何设置favicon'],   // 找到 docs/note/react/basic/react如何使用.md 文件
+            ['/posts/blog/basic/hexo部署css-js等404以及上传图片', 'hexo部署后404问题解决'],
+            ['/posts/blog/basic/vuepress博客上传图片', 'vuepress博客上传图片解决'],
           ]
         },
       ],
 
       // 新开一个专栏用来存放美图
-      '/note/photos/': [
+      '/posts/photos/': [
       	['', '美图专栏'],	// 当切换到 /note/photos/ 时默认展示该md
       	// 这里采用有下拉选项的侧边栏
       	{
       		tilte: '美图',	// 下拉侧边栏显示的文本
       		children: [
-      			['/note/photos/date/20191102美图', '20191102'],
+      			['/posts/photos/date/20191102美图', '20191102'],
       		]
       	}
       ],
