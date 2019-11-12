@@ -12,7 +12,7 @@ tags:
 categories:
 	- 编程
 ---
-![](1.jpg)
+![](/20191112/1.jpg)
 
 # HSSFWorkbook 介绍
 ---
@@ -27,7 +27,7 @@ categories:
 
 这里提一下：HSSFWorkbook:是操作Excel2003以前（包括2003）的版本，扩展名是.xls；XSSFWorkbook:是操作Excel2007的版本，扩展名是.xlsx。对于不同版本的EXCEL文档要使用不同的工具类，如果使用错了，会提示如下错误信息：org.apache.poi.openxml4j.exceptions.InvalidOperationException，org.apache.poi.poifs.filesystem.OfficeXmlFileException
 
-![](2.jpg)
+![](/20191112/2.jpg)
 
 # HSSFWorkbook 的使用
 ---
@@ -300,13 +300,14 @@ public class TestGenExcel {
 
 ------
 
-![](3.jpg)
+![](/20191112/3.jpg)
 
 <div align="middle">《行香子·归去来兮》	
 	-- 北宋：辛弃疾
 </div>
+
 > 归去来兮，行乐休迟。命由天、富贵何时。
-百年光景，七十者稀。奈一番愁，一番病，一番衰。
-名利奔驰，宠辱惊疑。旧家时、都有些儿。
-而今老矣，识破关机。算不如闲，不如醉，不如痴。
+> 百年光景，七十者稀。奈一番愁，一番病，一番衰。
+> 名利奔驰，宠辱惊疑。旧家时、都有些儿。
+> 而今老矣，识破关机。算不如闲，不如醉，不如痴。
 
