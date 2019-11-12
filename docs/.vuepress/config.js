@@ -5,7 +5,7 @@ module.exports = {
   head: [
     ['link', {rel: 'icon', href: '/favicon.ico'}],  // 设置网页的icon图标，将会从public文件夹中找到favicon.ico文件
     ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}],  // 设置移动端兼容
-    ['link', {rel: 'manifest', href: '/manifest.json'}],	// manifest pwa配置
+    // ['link', {rel: 'manifest', href: '/manifest.json'}],	// manifest pwa配置
     ['link', { rel: 'apple-touch-icon', href: '/logo.png' }], // 由于iphone11.3不支持manifest的图标，所以加上apple-touch-icon图标配置
   ],
   base: "/blog-vuepress/",  // 设置根路径，如果你是推送到username.github.io的仓库，则不需要设置，我这里是因为仓库名叫username.github.io/blog-vuepress
@@ -17,13 +17,20 @@ module.exports = {
         link: '/' // '/' 默认为docs文件夹下面的readme.md文件
       },
       // 有下拉选项的导航
+      // {
+      //   text: '我的文章',
+      //   items: [
+      //     {text: 'java', link: '/note/java/'},  // 注意link的设置，这样写的话就是从docs文件夹中找到note文件夹再找到vue文件夹
+      //     {text: 'blog', link: '/note/blog/'}, // 注意link的设置，如此写就是从docs文件夹中找到note文件夹再找到react文件夹
+      //   ]
+      // },  // vue 的js配置文件末尾的 ',' 没有限制，可写可不写
+
+      // 修改为不要下拉选项
       {
         text: '我的文章',
-        items: [
-          {text: 'java', link: '/note/java/'},  // 注意link的设置，这样写的话就是从docs文件夹中找到note文件夹再找到vue文件夹
-          {text: 'blog', link: '/note/blog/'}, // 注意link的设置，如此写就是从docs文件夹中找到note文件夹再找到react文件夹
-        ]
-      },  // vue 的js配置文件末尾的 ',' 没有限制，可写可不写
+        link: '/note/java/',  
+        link: '/note/blog/'
+      },
       // 美图欣赏
       {
       	text: '美图欣赏',
