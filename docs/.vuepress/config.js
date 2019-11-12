@@ -76,7 +76,8 @@ module.exports = {
       	{
       		tilte: '美图',	// 下拉侧边栏显示的文本
       		children: [
-      			['/posts/photos/date/20191102美图', '20191102'],
+      			['/posts/photos/date/20191102美图', '20191102图片墙'],
+      			['/posts/photos/date/20191112', '20191112图片墙'],
       		]
       	}
       ],

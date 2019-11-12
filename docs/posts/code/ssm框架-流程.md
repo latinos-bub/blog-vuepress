@@ -145,4 +145,4 @@ springmvc配置文件需要配置的内容：
     </error-page>
 
 ```
-![](/images/2.png)
+![](/blog-vuepress/images/20191112/4.jpg)
