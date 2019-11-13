@@ -34,12 +34,12 @@ function integrateGitalk(router) {
   }
   function renderGitalk(fullPath) {
     const gitalk = new Gitalk({
-      clientID: '103769ef64fae23f9964',
+      clientID: '103769ef64fae23f9964',	// 你的博客在github上的授权 clientId
       clientSecret: '00900497ad2cfe63044801825d3301b78241d7d3', // come from github development
-      repo: 'blog-vuepress-talk',
+      repo: 'blog-vuepress-talk',	// 你存储该博客评论的github新建的public类型的仓库
       owner: 'latinos-bub',
       admin: ['latinos-bub'],
-      id: 'comment',
+      id: fullPath,	// 使用 fullPath 来给每个页面的评论单独设置
       distractionFreeMode: false,
       language: 'zh-CN',
     });
