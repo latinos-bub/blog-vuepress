@@ -1,5 +1,7 @@
 // .vuepress/config.js 配置文件
 module.exports = {
+	// 启用自定义的主题
+	// theme: 'yubisaki',
   title: "latinos-bub vuepress博客", // 博客标题
   // dest: "./dist", // 打包后存放的路径，以根目录开始，我这里不需要设置，编辑完md文章后，只需要执行 ./build.sh 脚本即可
   head: [
@@ -10,6 +12,20 @@ module.exports = {
   ],
   base: "/blog-vuepress/",  // 设置根路径，如果你是推送到username.github.io的仓库，则不需要设置，我这里是因为仓库名叫username.github.io/blog-vuepress
   themeConfig: {
+	// 博客背景图片
+    background: '/blog-vuepress/commons/1.jpg',
+    // github card
+    github: 'latinos-bub',
+    // 定制文章标题颜色
+    accentColor: '#FFB6C1',
+    // 每页显示的文章数量
+    per_page: 5,
+    // 创建文章的时间格式，不设则不显示，可选[yyyy-MM-dd HH:mm:ss]
+    date_format: 'yyyy-MM-dd HH:mm:ss',
+    // 开启标签功能
+    tags: true,
+
+
     nav: [ // 导航栏设置
       // 没有下拉选项的导航
       {
