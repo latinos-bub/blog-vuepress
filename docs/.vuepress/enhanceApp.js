@@ -36,7 +36,7 @@ function integrateGitalk(router) {
     const gitalk = new Gitalk({
       clientID: '103769ef64fae23f9964',
       clientSecret: '00900497ad2cfe63044801825d3301b78241d7d3', // come from github development
-      repo: 'blog-vuepress-talk ',
+      repo: 'blog-vuepress-talk',
       owner: 'latinos-bub',
       admin: ['latinos-bub'],
       id: 'comment',
