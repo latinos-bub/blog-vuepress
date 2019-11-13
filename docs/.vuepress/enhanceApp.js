@@ -1,10 +1,10 @@
 function integrateGitment(router) {
   const linkGitment = document.createElement('link')
-  linkGitment.href = 'https://imsun.github.io/gitment/style/default.css'
+  linkGitment.href = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css'
   linkGitment.rel = 'stylesheet'
   const scriptGitment = document.createElement('script')
   document.body.appendChild(linkGitment)
-  scriptGitment.src = 'https://imsun.github.io/gitment/dist/gitment.browser.js'
+  scriptGitment.src = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js'
   document.body.appendChild(scriptGitment)
 
   router.afterEach((to) => {
