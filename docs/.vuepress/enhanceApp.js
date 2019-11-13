@@ -103,7 +103,7 @@ function integrateGitalk(router) {
       repo: 'blog-vuepress-talk',	// 你存储该博客评论的github新建的public类型的仓库
       owner: 'latinos-bub',
       admin: ['latinos-bub'],
-      id: location.pathname,	// 使用 fullPath 来给每个页面的评论单独设置
+      id: fullPath.pathname,	// 使用 fullPath 来给每个页面的评论单独设置
       distractionFreeMode: false,
       language: 'zh-CN',
     });
