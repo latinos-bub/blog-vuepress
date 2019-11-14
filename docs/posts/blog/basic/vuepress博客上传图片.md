@@ -1,4 +1,12 @@
+---
+title: vuepress博客上传图片
+tags: []
+categories: []
+---
+
 ### vuepress 博客上传图片
+
+ <!-- more -->
 
 > 首先说明一点：vuepress 的博客绑定的github仓库名没有必须是 username.github.io 这种形式的强要求，千万别被误导了，因为我们都是使用github来同时搭建 hexo 博客 和 vuepress 博客的，因此不可能只有一个仓库(且还必须是 username.github.io 名称 这种错误论断的)。
 
