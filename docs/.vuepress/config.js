@@ -1,7 +1,7 @@
 module.exports = {
   base: '/blog-vuepress/', // 设置根路径，如果你是推送到username.github.io的仓库，则不需要设置，我这里是因为仓库名叫username.github.io/blog-vuepress
   // dest: './dist', // 打包后存放的路径，以根目录开始，我这里不需要设置，编辑完md文章后，只需要执行 ./build.sh 脚本即可
-  title: "latinos-bub vuepress博客",
+  title: "拉丁小毛的博客",
   description:
     '时光荏苒，岁月无情', //网站的描述，它将会以 <meta> 标签渲染到当前页面的 HTML 中,还显示在首页的文章列表上面
   head: [
@@ -57,8 +57,8 @@ module.exports = {
       },
       production: {
         //生产环境的配置
-        clientId: '',
-        clientSecret: ''
+        clientId: '103769ef64fae23f9964',
+        clientSecret: '00900497ad2cfe63044801825d3301b78241d7d3'
       }
     },
     menus: {
@@ -67,7 +67,8 @@ module.exports = {
       home: '主页',
       all: '时间归档',
       github: 'Github',
-      about: '自我介绍'
+      about: '关于我',
+      // link: '友链'
     }
   }
 };

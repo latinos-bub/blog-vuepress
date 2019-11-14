@@ -12,6 +12,6 @@
 # git
 # git init
 git add .
-git commit -m "上传源码到dev分支"
+git commit -m "upload project source code to the dev branch"
 # git remote add origin git@github.com:latinos-bub/blog-vuepress.git
-git push -f origin dev
+git push -f origin dev --tags
