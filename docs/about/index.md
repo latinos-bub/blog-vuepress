@@ -1,3 +1,22 @@
 ---
-Layout: Layout
+title: about me
+Layout:  "about"
+type: "about"
 ---
+
+
+
+
+# 教育经历
+* <b>本科 软件工程</b>
+安徽信息工程学院
+2013/09 - 2017/06
+<b>倒数水平</b>
+
+# 联系方式
+* <b>电子邮箱</b>
+util.you.com@gmail.com
+* <b>地址</b>
+安徽省合肥市经开区启迪科技城C2#，邮编：230000 区号：0551
+* <b>QQ</b>
+2653020258

@@ -43,7 +43,7 @@ module.exports = {
     github: 'https://github.com/latinos-bub', //点击github跳转的地址
     vssue: {
       //评论的配置,
-      need: false, //是否需要评论
+      need: true, //是否需要评论
       option: {
         //公共的Vssue配置
         owner: 'latinos-bub', //用户名

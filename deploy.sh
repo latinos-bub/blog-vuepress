@@ -1,22 +1,17 @@
-!/usr/bin/env sh
+#!/usr/bin/env sh
 
-# 确保脚本抛出遇到的错误
+# abort on errors
 set -e
 
-# 生成静态文件
-npm run build
+# build
+npm run docs:build
 
-# 进入生成的文件夹
-cd ./dist
+# nav into the build out dir
+cd docs/.vuepress/dist
 
-
+# git
 git init
-git add -A
-git commit -m 'deploy'
-
-
-# 把下面的push命令按照你的情况修改后去掉注释
-# 如果发布到 https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+git add .
+git commit -m "发表文章，部署到博客上"
+git remote add origin git@github.com:latinos-bub/blog-vuepress.git
+git push -f origin master
