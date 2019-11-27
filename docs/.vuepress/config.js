@@ -36,7 +36,7 @@ module.exports = {
         placeholder: '搜搜看', //搜索框的默认文章
         searchReply: '什么都没搜到，试一下其它搜索词~',
         author: 'latinos-bub', //侧边栏的设置
-        email: 'util.you.com@gmail.com',
+        email: 'latinos-bub@outlook.com',
         pagination: '5', //每一页显示的文章个数
         avatar: '/avatar.jpg', //头像地址
         brand: '/brand.jpg', //头像背景图片地址
@@ -68,7 +68,6 @@ module.exports = {
             all: '时间归档',
             github: 'Github',
             about: '关于我',
-            // link: '友链'
         }
     },
 
