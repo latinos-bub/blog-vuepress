@@ -47,7 +47,7 @@ module.exports = {
             option: {
                 //公共的Vssue配置
                 owner: 'latinos-bub', //用户名
-                repo: 'blog-vuepress-talk', //仓库名
+                repo: 'blogtalk', //仓库名
                 locale: 'zh'
             },
             development: {
