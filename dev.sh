@@ -11,6 +11,8 @@
 
 # git
 # git init
+git lfs install
+git lfs track "*.mp4"
 git add .
 git commit -m "upload project source code to the dev branch"
 # git remote add origin git@github.com:latinos-bub/blog-vuepress.git

@@ -11,6 +11,8 @@ cd docs/.vuepress/dist
 
 # git
 git init
+git lfs install
+git lfs track "*.mp4"
 git add .
 git commit -m "published articles"
 git remote add origin git@github.com:latinos-bub/blog-vuepress.git
